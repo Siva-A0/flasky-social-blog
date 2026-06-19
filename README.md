@@ -15,7 +15,7 @@ This project was built while working through *Flask Web Development* by Miguel G
 - **Blog posts** — Markdown support with sanitized HTML rendering
 - **Comments** — threaded comments with moderation tools for admins
 - **REST API** — JSON endpoints for posts and users, with pagination and token-based authentication
-- **Automated tests** — unit tests covering models, API endpoints, and core app behavior
+- **Automated tests** — unit tests covering models and API endpoints, plus Selenium browser tests for end-to-end flows
 - **Production deployment** — configured for containerized and platform-based deployment
 
 ## Tech Stack
@@ -23,10 +23,10 @@ This project was built while working through *Flask Web Development* by Miguel G
 | Layer | Technology |
 |---|---|
 | Backend | Flask, Flask-SQLAlchemy, Flask-Login, Flask-Mail |
-| Database | SQLite (dev), PostgreSQL-ready (prod) |
-| Frontend | Jinja2, Bootstrap, Chart.js |
+| Database | MySQL (via PyMySQL) |
+| Frontend | Jinja2, Bootstrap |
 | API | Flask REST endpoints, JSON serialization |
-| Testing | unittest, Flask test client, coverage.py |
+| Testing | unittest, Flask test client, Selenium, coverage.py |
 | Deployment | Docker (Alpine-based image), MySQL container, Railway/Render |
 
 ## Project Structure
