@@ -23,6 +23,12 @@ class Config:
     SQLALCHEMY_RECORD_QUERIES = True
     FLASKY_SLOW_DB_QUERY_TIME = 0.5
     
+    EMAIL_PROVIDER = os.getenv("EMAIL_PROVIDER", "flask_mail")
+    GMAIL_TOKEN_JSON = os.environ.get("GMAIL_TOKEN_JSON")
+    GMAIL_TOKEN_BASE64 = os.environ.get("GMAIL_TOKEN_BASE64")
+    GMAIL_TOKEN_FILE = os.environ.get("GMAIL_TOKEN_FILE", "token.json")
+    GMAIL_OAUTH_SCOPES = ["https://www.googleapis.com/auth/gmail.send"]
+    
     @staticmethod
     def init_app(app):
         pass
