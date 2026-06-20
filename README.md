@@ -4,7 +4,7 @@ A full-featured social blogging web application built with Flask, following prod
 
 This project was built while working through *Flask Web Development* by Miguel Grinberg, implementing every feature end-to-end — updating deprecated library methods (e.g. `itsdangerous` token serialization) to current, supported APIs, and rebuilding the Docker setup on lightweight Alpine base images with a separate MySQL container rather than the book's original configuration.
 
-**Live demo:** [add your Railway/Render URL here]
+- **Live Demo:** [Flasky Social Blog](https://flasky-social-blog-production.up.railway.app/)
 
 ## Features
 
