@@ -11,6 +11,7 @@ def send(to, subject, text_body, html_body):
     msg = MIMEMultipart("alternative")
     msg["to"] = to
     msg["subject"] = subject
+    msg["from"] = current_app.config["FLASKY_MAIL_SENDER"]
 
     msg.attach(MIMEText(text_body, "plain"))
     msg.attach(MIMEText(html_body, "html"))
